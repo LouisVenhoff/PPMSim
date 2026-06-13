@@ -5,7 +5,7 @@
 
 #define CHANNELS 8
 
-void makeSnapshot();
+uint16_t makeSnapshot();
 void setupPPMParser(int ppmPin);
 
 #endif
