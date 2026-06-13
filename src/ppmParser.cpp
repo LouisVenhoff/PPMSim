@@ -5,8 +5,6 @@ volatile uint8_t channelIndex = 0;
 
 volatile unsigned long lastTime = 0;
 
-uint16_t snapshottedValues[CHANNELS];
-
 void ppmInterrupt(){
 
   unsigned long currentTime = micros();
@@ -26,16 +24,14 @@ void ppmInterrupt(){
   }
 }
 
-uint16_t makeSnapshot(){
+void makeSnapshot(uint16_t output[CHANNELS]){
   noInterrupts();
 
   for(int i = 0; i < CHANNELS; i++){
-    snapshottedValues[i] = ppmValues[i];
-  };
+    output[i] = ppmValues[i];
+  }
 
   interrupts();
-
-  return snapshottedValues;
 }
 
 void setupPPMParser(int ppmPin){
