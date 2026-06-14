@@ -1,5 +1,6 @@
 #include "controlServer.h"
 #include <WebServer.h>
+#include <ArduinoJson.h>
 
 WebServer server(80);
 
@@ -8,7 +9,13 @@ void handleServerStart(){
     if(server.hasArg("plain")){
         String body = server.arg("plain");
 
-        Serial.println(body);
+        JsonDocument doc;
+
+        deserializeJson(doc, body);
+
+        const char* ip = doc["ip"];
+
+        Serial.println(ip);
 
         digitalWrite(ONBOARD_LED, 1);
 
