@@ -1,6 +1,8 @@
 #include "controlServer.h"
+#include "transmit.h"
 #include <WebServer.h>
 #include <ArduinoJson.h>
+
 
 WebServer server(80);
 
@@ -17,8 +19,10 @@ void handleServerStart(){
 
         Serial.println(ip);
 
-        digitalWrite(ONBOARD_LED, 1);
+        startLiveTask();
 
+        digitalWrite(ONBOARD_LED, 1);
+        
         server.send(200);
     }
     else{
@@ -30,6 +34,9 @@ void handleServerStart(){
 }
 
 void handleServerStop(){
+    
+    stopLiveTask();
+    
     digitalWrite(ONBOARD_LED, 0);
 
     server.send(200);

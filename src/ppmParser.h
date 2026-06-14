@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 
-#define CHANNELS 8
+#define CHANNELS 6
 
 void makeSnapshot(uint16_t output[CHANNELS]);
 void setupPPMParser(int ppmPin);
