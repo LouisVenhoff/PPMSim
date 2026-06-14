@@ -2,7 +2,7 @@
 #include "ppmParser.h"
 #include "axisCalc.h"
 #include <Arduino.h>
-
+#include <ArduinoJson.h>
 
 TaskHandle_t ppmTaskHandle = NULL;
 
@@ -10,16 +10,17 @@ void sendSnapshot(long snapshot[CHANNELS]){
     //TODO: Send UDP Message to Address
     // Serial.println("Sending snapshot");
 
-    
+    JsonDocument doc;
+
+    JsonArray channels = doc.to<JsonArray>();
 
     // Serial.println();
     for(int i = 0; i < CHANNELS; i++){
-        if(i != 1){
-            continue;
-        }
-
-        Serial.println(snapshot[i]);
+        channels.add(snapshot[i]);
     }
+
+    serializeJson(doc, Serial);
+    Serial.println();
 }
 
 void doSomesthing(){
