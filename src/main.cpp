@@ -2,6 +2,7 @@
 #include "ppmParser.h"
 #include "axisCalc.h"
 #include "networkManager.h"
+#include "controlServer.h"
 
 #define PPM_PIN 23
 
@@ -9,6 +10,8 @@ void setup() {
   Serial.begin(9600);
 
   connect();
+  initializeServer();
+
 
   // setupPPMParser(PPM_PIN);
 }
