@@ -3,16 +3,23 @@
 #include "axisCalc.h"
 #include <Arduino.h>
 
+
 TaskHandle_t ppmTaskHandle = NULL;
 
 void sendSnapshot(long snapshot[CHANNELS]){
     //TODO: Send UDP Message to Address
     // Serial.println("Sending snapshot");
 
+    
+
     // Serial.println();
-    // for(int i = 0; i < CHANNELS; i++){
-    //     Serial.print(snapshot[i]);
-    // }
+    for(int i = 0; i < CHANNELS; i++){
+        if(i != 1){
+            continue;
+        }
+
+        Serial.println(snapshot[i]);
+    }
 }
 
 void doSomesthing(){
@@ -27,15 +34,13 @@ void startPPMReader(){
     
         makeSnapshot(snapshot);
 
-        Serial.println(snapshot[0]);
-
         for(int i = 0; i < CHANNELS; i++){
             axisMappedSnapshot[i] = calculateAxisValue(snapshot[i]);
         }
 
         sendSnapshot(axisMappedSnapshot);
 
-        delay(5000);
+        delay(10);
     }
 }
 
@@ -48,16 +53,14 @@ void startLiveTask(){
         return;
     };
     
-    // xTaskCreate(
-    //     ppmReaderTask,
-    //     "PPMReader",
-    //     4096,
-    //     NULL,
-    //     1,
-    //     &ppmTaskHandle
-    // );
-
-    startPPMReader();
+    xTaskCreate(
+        ppmReaderTask,
+        "PPMReader",
+        4096,
+        NULL,
+        1,
+        &ppmTaskHandle
+    );
 }
 
 void stopLiveTask(){
