@@ -3,8 +3,15 @@
 #include "axisCalc.h"
 #include <Arduino.h>
 #include <ArduinoJson.h>
+#include <WiFiUdp.h>
 
 TaskHandle_t ppmTaskHandle = NULL;
+
+WiFiUDP udp;
+
+String targetIp;
+
+uint16_t targetPort;
 
 void sendSnapshot(long snapshot[CHANNELS]){
     //TODO: Send UDP Message to Address
@@ -19,12 +26,14 @@ void sendSnapshot(long snapshot[CHANNELS]){
         channels.add(snapshot[i]);
     }
 
-    serializeJson(doc, Serial);
-    Serial.println();
-}
+    String parsedJson;
 
-void doSomesthing(){
-    Serial.print("HIHI");
+    serializeJson(doc, parsedJson);
+
+    udp.beginPacket(targetIp.c_str(), targetPort);
+    udp.print(parsedJson);
+    udp.endPacket();
+
 }
 
 void startPPMReader(){
@@ -41,7 +50,7 @@ void startPPMReader(){
 
         sendSnapshot(axisMappedSnapshot);
 
-        delay(10);
+        delay(1);
     }
 }
 
@@ -49,10 +58,13 @@ void ppmReaderTask(void *parameter){
     startPPMReader();
 }
 
-void startLiveTask(){
+void startLiveTask(String ip){
     if(ppmTaskHandle != NULL){
         return;
     };
+
+    targetIp = ip;
+    targetPort = 2000;
     
     xTaskCreate(
         ppmReaderTask,

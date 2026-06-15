@@ -3,7 +3,7 @@
 
 #include "ppmParser.h"
 
-void startLiveTask();
+void startLiveTask(String ip);
 
 void stopLiveTask();
 
