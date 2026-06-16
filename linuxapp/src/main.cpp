@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
-
+#include "network.h"
+#include <netinet/in.h>
 using namespace std;
 
 string promptDeviceIp(){
@@ -11,14 +12,23 @@ string promptDeviceIp(){
 
     cin >> address;
 
-   return address.c_str();
+   return address;
 }
 
 int main(){
     
     string deviceIP = promptDeviceIp();
 
-    cout << deviceIP;
+    char localIp[INET_ADDRSTRLEN];
+
+    int test = getLocalIp(localIp, sizeof(localIp));
+
+    if(test == 0){
+        cout << localIp;
+    }
+    else{
+        cout << "Error while loading local ip address";
+    }
 
     return 0;
 };
