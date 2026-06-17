@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-src/include -I/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-build/cpr_generated_includes -I/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-src/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -O3 -DNDEBUG
 

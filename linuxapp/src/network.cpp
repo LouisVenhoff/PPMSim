@@ -3,8 +3,12 @@
 #include <arpa/inet.h>
 #include <cstring>
 #include <iostream>
+#include <cpr/cpr.h>
+#include <nlohmann/json.hpp>
+
 
 using namespace std;
+using json = nlohmann::json;
 
 int getLocalIp(char * buffer, size_t bufferSize){
     struct ifaddrs *ifaddr, *ifa; 
@@ -34,4 +38,38 @@ int getLocalIp(char * buffer, size_t bufferSize){
     }
     freeifaddrs(ifaddr);
     return 1;
+};
+
+
+
+int setupRemoteConnection(){
+    cout << "Enter IP Address of the DX6Sim Device (ESP32): ";
+
+    std:string address;
+
+    cin >> address;
+
+    string url = "http://" + address + "/start";
+
+    char localIp[INET_ADDRSTRLEN];
+
+    int localIpResult = getLocalIp(localIp, sizeof(localIp));
+
+    if(localIpResult > 0){
+        cout << "Error while retrieving local IP Address!";
+        return 1;
+    }
+    
+    json body;
+    body["ip"] = localIp;
+
+    cout << "Connecting...";
+
+    cpr::Response result = cpr::Post(
+        cpr::Url{url},
+        cpr::Header{{"Content-Type", "application/json"}},
+        cpr::Body{body.dump()}
+    );
+
+    return 0;
 };

@@ -5,5 +5,6 @@
 #include <cstddef>
 
 int getLocalIp(char* buffer, size_t bufferSize);
+int setupRemoteConnection();
 
 #endif 

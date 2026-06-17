@@ -17,19 +17,8 @@ string promptDeviceIp(){
 
 int main(){
     
-    string deviceIP = promptDeviceIp();
-
-    char localIp[INET_ADDRSTRLEN];
-
-    int test = getLocalIp(localIp, sizeof(localIp));
-
-    if(test == 0){
-        cout << localIp;
-    }
-    else{
-        cout << "Error while loading local ip address";
-    }
-
+    setupRemoteConnection();
+    
     return 0;
 };
 

@@ -112,6 +112,8 @@ ppmSim: CMakeFiles/ppmSim.dir/src/main.cpp.o
 ppmSim: CMakeFiles/ppmSim.dir/src/network.cpp.o
 ppmSim: CMakeFiles/ppmSim.dir/build.make
 ppmSim: CMakeFiles/ppmSim.dir/compiler_depend.ts
+ppmSim: _deps/cpr-build/cpr/libcpr.so.1.11.1
+ppmSim: _deps/curl-build/lib/libcurl.so.4.8.0
 ppmSim: CMakeFiles/ppmSim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ppmSim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ppmSim.dir/link.txt --verbose=$(VERBOSE)
