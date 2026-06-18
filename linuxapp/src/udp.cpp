@@ -1,7 +1,8 @@
+#include "udp.h"
+
 int startUdpListener(){
   int sockfd;
-  char buffer[1024];
-  struct sockaddr_in servaddr, cliaddr;
+  struct sockaddr_in servaddr;
 
   if((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0){
     std::cout << "UDP Socket creation failed" << std::endl;
@@ -9,7 +10,6 @@ int startUdpListener(){
   }
 
   memset(&servaddr, 0, sizeof(servaddr));
-  memset(&cliaddr, 0, sizeof(cliaddr));
 
   servaddr.sin_family = AF_INET;
   servaddr.sin_addr.s_addr = INADDR_ANY;
@@ -20,13 +20,30 @@ int startUdpListener(){
     return -1;
   }
 
+  return sockfd;
+}
+
+int receiveNextPacket(int sockfd, char result[MAXLINE]){
   socklen_t len;
-  int n;
+  int msgLength;
+  char buffer[MAXLINE];
+  struct sockaddr_in cliaddr;
 
   len = sizeof(cliaddr);
 
-  n = recvfrom(sockfd, (char* )buffer, MAXLINE, MSG_WAITALL, ( struct sockaddr *) &cliaddr, &len);
-  buffer[n] = '\0';
-  printf(buffer);
+  memset(&cliaddr, 0, sizeof(cliaddr));
 
+  msgLength = recvfrom(sockfd, (char* )buffer, MAXLINE, 0, ( struct sockaddr *) &cliaddr, &len);
+
+  if(msgLength < 0){
+    return msgLength;
+  }
+
+  buffer[msgLength] = '\0';
+
+  memcpy(result, buffer, msgLength);
+
+  result[msgLength] = '\0';
+
+  return 1;
 }
