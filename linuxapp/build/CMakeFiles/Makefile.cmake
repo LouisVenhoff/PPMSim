@@ -25,7 +25,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/curl-build/lib/Makefile.inc.cmake"
   "_deps/curl-build/lib/Makefile.soname.cmake"
   "_deps/curl-src/CMake/CurlSymbolHiding.cmake"
-  "_deps/curl-src/CMake/CurlTests.c"
   "_deps/curl-src/CMake/FindLibidn2.cmake"
   "_deps/curl-src/CMake/FindLibpsl.cmake"
   "_deps/curl-src/CMake/FindLibssh2.cmake"
@@ -171,7 +170,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ppmSim.dir/DependInfo.cmake"
   "_deps/zlib-build/CMakeFiles/zlib.dir/DependInfo.cmake"
-  "_deps/zlib-build/CMakeFiles/zlibstatic.dir/DependInfo.cmake"
   "_deps/curl-build/CMakeFiles/curl_uninstall.dir/DependInfo.cmake"
   "_deps/curl-build/docs/CMakeFiles/curl-generate-curl-config.1.dir/DependInfo.cmake"
   "_deps/curl-build/docs/CMakeFiles/curl-generate-mk-ca-bundle.1.dir/DependInfo.cmake"

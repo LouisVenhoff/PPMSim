@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ppmSim.dir/src/main.cpp.o.d"
   "CMakeFiles/ppmSim.dir/src/network.cpp.o"
   "CMakeFiles/ppmSim.dir/src/network.cpp.o.d"
+  "CMakeFiles/ppmSim.dir/src/udp.cpp.o"
+  "CMakeFiles/ppmSim.dir/src/udp.cpp.o.d"
   "ppmSim"
   "ppmSim.pdb"
 )

@@ -188,19 +188,6 @@ zlib/fast:
 .PHONY : zlib/fast
 
 #=============================================================================
-# Target rules for targets named zlibstatic
-
-# Build rule for target.
-zlibstatic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlibstatic
-.PHONY : zlibstatic
-
-# fast build rule for target.
-zlibstatic/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/build
-.PHONY : zlibstatic/fast
-
-#=============================================================================
 # Target rules for targets named curl_uninstall
 
 # Build rule for target.
@@ -339,6 +326,30 @@ src/network.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppmSim.dir/build.make CMakeFiles/ppmSim.dir/src/network.cpp.s
 .PHONY : src/network.cpp.s
 
+src/udp.o: src/udp.cpp.o
+.PHONY : src/udp.o
+
+# target to build an object file
+src/udp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppmSim.dir/build.make CMakeFiles/ppmSim.dir/src/udp.cpp.o
+.PHONY : src/udp.cpp.o
+
+src/udp.i: src/udp.cpp.i
+.PHONY : src/udp.i
+
+# target to preprocess a source file
+src/udp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppmSim.dir/build.make CMakeFiles/ppmSim.dir/src/udp.cpp.i
+.PHONY : src/udp.cpp.i
+
+src/udp.s: src/udp.cpp.s
+.PHONY : src/udp.s
+
+# target to generate assembly for a file
+src/udp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppmSim.dir/build.make CMakeFiles/ppmSim.dir/src/udp.cpp.s
+.PHONY : src/udp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -360,13 +371,15 @@ help:
 	@echo "... libcurl_shared"
 	@echo "... ppmSim"
 	@echo "... zlib"
-	@echo "... zlibstatic"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/network.o"
 	@echo "... src/network.i"
 	@echo "... src/network.s"
+	@echo "... src/udp.o"
+	@echo "... src/udp.i"
+	@echo "... src/udp.s"
 .PHONY : help
 
 

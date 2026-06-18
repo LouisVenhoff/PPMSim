@@ -11733,3 +11733,77 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build/_deps/zlib-src/cmake/detect-arch.cmake:26 (try_run)"
+      - "build/_deps/zlib-src/CMakeLists.txt:47 (include)"
+    directories:
+      source: "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/CMakeFiles/CMakeTmp"
+      binary: "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-src/cmake;"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a4f9c/fast
+        make[1]: Entering directory '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        /usr/bin/make  -f CMakeFiles/cmTC_a4f9c.dir/build.make CMakeFiles/cmTC_a4f9c.dir/build
+        make[2]: Entering directory '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_a4f9c.dir/detect-arch.c.o
+        /usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_a4f9c.dir/detect-arch.c.o -c /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-src/cmake/detect-arch.c
+        /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-src/cmake/detect-arch.c:8:6: error: #error archfound x86_64
+            8 |     #error archfound x86_64
+              |      ^~~~~
+        make[2]: *** [CMakeFiles/cmTC_a4f9c.dir/build.make:81: CMakeFiles/cmTC_a4f9c.dir/detect-arch.c.o] Error 1
+        make[2]: Leaving directory '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        make[1]: *** [Makefile:134: cmTC_a4f9c/fast] Error 2
+        make[1]: Leaving directory '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "build/_deps/cpr-src/include/CMakeLists.txt:62 (try_compile)"
+    directories:
+      source: "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-build/include/std_fs/CMakeFiles/CMakeTmp"
+      binary: "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-build/include/std_fs/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall -Wextra -Wpedantic -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-src/cmake;"
+    buildResult:
+      variable: "STD_FS_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-build/include/std_fs/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ccb2b/fast
+        make[1]: Entering directory '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-build/include/std_fs/CMakeFiles/CMakeTmp'
+        /usr/bin/make  -f CMakeFiles/cmTC_ccb2b.dir/build.make CMakeFiles/cmTC_ccb2b.dir/build
+        make[2]: Entering directory '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-build/include/std_fs/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_ccb2b.dir/std_fs_support_test.cpp.o
+        /usr/bin/c++   -Wall -Wextra -Wpedantic -Werror  -std=c++17 -o CMakeFiles/cmTC_ccb2b.dir/std_fs_support_test.cpp.o -c /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-src/cmake/std_fs_support_test.cpp
+        Linking CXX executable cmTC_ccb2b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccb2b.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wall -Wextra -Wpedantic -Werror  CMakeFiles/cmTC_ccb2b.dir/std_fs_support_test.cpp.o -o cmTC_ccb2b
+        make[2]: Leaving directory '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-build/include/std_fs/CMakeFiles/CMakeTmp'
+        make[1]: Leaving directory '/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/cpr-build/include/std_fs/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+...

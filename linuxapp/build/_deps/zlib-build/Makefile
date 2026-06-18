@@ -175,27 +175,12 @@ zlib/fast:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/build
 .PHONY : zlib/fast
 
-# Convenience name for target.
-_deps/zlib-build/CMakeFiles/zlibstatic.dir/rule:
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/zlib-build/CMakeFiles/zlibstatic.dir/rule
-.PHONY : _deps/zlib-build/CMakeFiles/zlibstatic.dir/rule
-
-# Convenience name for target.
-zlibstatic: _deps/zlib-build/CMakeFiles/zlibstatic.dir/rule
-.PHONY : zlibstatic
-
-# fast build rule for target.
-zlibstatic/fast:
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/build
-.PHONY : zlibstatic/fast
-
 adler32.o: adler32.c.o
 .PHONY : adler32.o
 
 # target to build an object file
 adler32.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/adler32.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/adler32.c.o
 .PHONY : adler32.c.o
 
 adler32.i: adler32.c.i
@@ -204,7 +189,6 @@ adler32.i: adler32.c.i
 # target to preprocess a source file
 adler32.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/adler32.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/adler32.c.i
 .PHONY : adler32.c.i
 
 adler32.s: adler32.c.s
@@ -213,7 +197,6 @@ adler32.s: adler32.c.s
 # target to generate assembly for a file
 adler32.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/adler32.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/adler32.c.s
 .PHONY : adler32.c.s
 
 adler32_fold.o: adler32_fold.c.o
@@ -222,7 +205,6 @@ adler32_fold.o: adler32_fold.c.o
 # target to build an object file
 adler32_fold.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/adler32_fold.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/adler32_fold.c.o
 .PHONY : adler32_fold.c.o
 
 adler32_fold.i: adler32_fold.c.i
@@ -231,7 +213,6 @@ adler32_fold.i: adler32_fold.c.i
 # target to preprocess a source file
 adler32_fold.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/adler32_fold.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/adler32_fold.c.i
 .PHONY : adler32_fold.c.i
 
 adler32_fold.s: adler32_fold.c.s
@@ -240,7 +221,6 @@ adler32_fold.s: adler32_fold.c.s
 # target to generate assembly for a file
 adler32_fold.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/adler32_fold.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/adler32_fold.c.s
 .PHONY : adler32_fold.c.s
 
 arch/x86/adler32_avx2.o: arch/x86/adler32_avx2.c.o
@@ -249,7 +229,6 @@ arch/x86/adler32_avx2.o: arch/x86/adler32_avx2.c.o
 # target to build an object file
 arch/x86/adler32_avx2.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx2.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx2.c.o
 .PHONY : arch/x86/adler32_avx2.c.o
 
 arch/x86/adler32_avx2.i: arch/x86/adler32_avx2.c.i
@@ -258,7 +237,6 @@ arch/x86/adler32_avx2.i: arch/x86/adler32_avx2.c.i
 # target to preprocess a source file
 arch/x86/adler32_avx2.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx2.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx2.c.i
 .PHONY : arch/x86/adler32_avx2.c.i
 
 arch/x86/adler32_avx2.s: arch/x86/adler32_avx2.c.s
@@ -267,7 +245,6 @@ arch/x86/adler32_avx2.s: arch/x86/adler32_avx2.c.s
 # target to generate assembly for a file
 arch/x86/adler32_avx2.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx2.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx2.c.s
 .PHONY : arch/x86/adler32_avx2.c.s
 
 arch/x86/adler32_avx512.o: arch/x86/adler32_avx512.c.o
@@ -276,7 +253,6 @@ arch/x86/adler32_avx512.o: arch/x86/adler32_avx512.c.o
 # target to build an object file
 arch/x86/adler32_avx512.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx512.c.o
 .PHONY : arch/x86/adler32_avx512.c.o
 
 arch/x86/adler32_avx512.i: arch/x86/adler32_avx512.c.i
@@ -285,7 +261,6 @@ arch/x86/adler32_avx512.i: arch/x86/adler32_avx512.c.i
 # target to preprocess a source file
 arch/x86/adler32_avx512.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx512.c.i
 .PHONY : arch/x86/adler32_avx512.c.i
 
 arch/x86/adler32_avx512.s: arch/x86/adler32_avx512.c.s
@@ -294,7 +269,6 @@ arch/x86/adler32_avx512.s: arch/x86/adler32_avx512.c.s
 # target to generate assembly for a file
 arch/x86/adler32_avx512.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx512.c.s
 .PHONY : arch/x86/adler32_avx512.c.s
 
 arch/x86/adler32_avx512_vnni.o: arch/x86/adler32_avx512_vnni.c.o
@@ -303,7 +277,6 @@ arch/x86/adler32_avx512_vnni.o: arch/x86/adler32_avx512_vnni.c.o
 # target to build an object file
 arch/x86/adler32_avx512_vnni.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512_vnni.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx512_vnni.c.o
 .PHONY : arch/x86/adler32_avx512_vnni.c.o
 
 arch/x86/adler32_avx512_vnni.i: arch/x86/adler32_avx512_vnni.c.i
@@ -312,7 +285,6 @@ arch/x86/adler32_avx512_vnni.i: arch/x86/adler32_avx512_vnni.c.i
 # target to preprocess a source file
 arch/x86/adler32_avx512_vnni.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512_vnni.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx512_vnni.c.i
 .PHONY : arch/x86/adler32_avx512_vnni.c.i
 
 arch/x86/adler32_avx512_vnni.s: arch/x86/adler32_avx512_vnni.c.s
@@ -321,7 +293,6 @@ arch/x86/adler32_avx512_vnni.s: arch/x86/adler32_avx512_vnni.c.s
 # target to generate assembly for a file
 arch/x86/adler32_avx512_vnni.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_avx512_vnni.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_avx512_vnni.c.s
 .PHONY : arch/x86/adler32_avx512_vnni.c.s
 
 arch/x86/adler32_sse42.o: arch/x86/adler32_sse42.c.o
@@ -330,7 +301,6 @@ arch/x86/adler32_sse42.o: arch/x86/adler32_sse42.c.o
 # target to build an object file
 arch/x86/adler32_sse42.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_sse42.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_sse42.c.o
 .PHONY : arch/x86/adler32_sse42.c.o
 
 arch/x86/adler32_sse42.i: arch/x86/adler32_sse42.c.i
@@ -339,7 +309,6 @@ arch/x86/adler32_sse42.i: arch/x86/adler32_sse42.c.i
 # target to preprocess a source file
 arch/x86/adler32_sse42.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_sse42.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_sse42.c.i
 .PHONY : arch/x86/adler32_sse42.c.i
 
 arch/x86/adler32_sse42.s: arch/x86/adler32_sse42.c.s
@@ -348,7 +317,6 @@ arch/x86/adler32_sse42.s: arch/x86/adler32_sse42.c.s
 # target to generate assembly for a file
 arch/x86/adler32_sse42.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_sse42.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_sse42.c.s
 .PHONY : arch/x86/adler32_sse42.c.s
 
 arch/x86/adler32_ssse3.o: arch/x86/adler32_ssse3.c.o
@@ -357,7 +325,6 @@ arch/x86/adler32_ssse3.o: arch/x86/adler32_ssse3.c.o
 # target to build an object file
 arch/x86/adler32_ssse3.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_ssse3.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_ssse3.c.o
 .PHONY : arch/x86/adler32_ssse3.c.o
 
 arch/x86/adler32_ssse3.i: arch/x86/adler32_ssse3.c.i
@@ -366,7 +333,6 @@ arch/x86/adler32_ssse3.i: arch/x86/adler32_ssse3.c.i
 # target to preprocess a source file
 arch/x86/adler32_ssse3.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_ssse3.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_ssse3.c.i
 .PHONY : arch/x86/adler32_ssse3.c.i
 
 arch/x86/adler32_ssse3.s: arch/x86/adler32_ssse3.c.s
@@ -375,7 +341,6 @@ arch/x86/adler32_ssse3.s: arch/x86/adler32_ssse3.c.s
 # target to generate assembly for a file
 arch/x86/adler32_ssse3.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/adler32_ssse3.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/adler32_ssse3.c.s
 .PHONY : arch/x86/adler32_ssse3.c.s
 
 arch/x86/chunkset_avx2.o: arch/x86/chunkset_avx2.c.o
@@ -384,7 +349,6 @@ arch/x86/chunkset_avx2.o: arch/x86/chunkset_avx2.c.o
 # target to build an object file
 arch/x86/chunkset_avx2.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_avx2.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_avx2.c.o
 .PHONY : arch/x86/chunkset_avx2.c.o
 
 arch/x86/chunkset_avx2.i: arch/x86/chunkset_avx2.c.i
@@ -393,7 +357,6 @@ arch/x86/chunkset_avx2.i: arch/x86/chunkset_avx2.c.i
 # target to preprocess a source file
 arch/x86/chunkset_avx2.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_avx2.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_avx2.c.i
 .PHONY : arch/x86/chunkset_avx2.c.i
 
 arch/x86/chunkset_avx2.s: arch/x86/chunkset_avx2.c.s
@@ -402,7 +365,6 @@ arch/x86/chunkset_avx2.s: arch/x86/chunkset_avx2.c.s
 # target to generate assembly for a file
 arch/x86/chunkset_avx2.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_avx2.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_avx2.c.s
 .PHONY : arch/x86/chunkset_avx2.c.s
 
 arch/x86/chunkset_sse2.o: arch/x86/chunkset_sse2.c.o
@@ -411,7 +373,6 @@ arch/x86/chunkset_sse2.o: arch/x86/chunkset_sse2.c.o
 # target to build an object file
 arch/x86/chunkset_sse2.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_sse2.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_sse2.c.o
 .PHONY : arch/x86/chunkset_sse2.c.o
 
 arch/x86/chunkset_sse2.i: arch/x86/chunkset_sse2.c.i
@@ -420,7 +381,6 @@ arch/x86/chunkset_sse2.i: arch/x86/chunkset_sse2.c.i
 # target to preprocess a source file
 arch/x86/chunkset_sse2.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_sse2.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_sse2.c.i
 .PHONY : arch/x86/chunkset_sse2.c.i
 
 arch/x86/chunkset_sse2.s: arch/x86/chunkset_sse2.c.s
@@ -429,7 +389,6 @@ arch/x86/chunkset_sse2.s: arch/x86/chunkset_sse2.c.s
 # target to generate assembly for a file
 arch/x86/chunkset_sse2.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_sse2.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_sse2.c.s
 .PHONY : arch/x86/chunkset_sse2.c.s
 
 arch/x86/chunkset_ssse3.o: arch/x86/chunkset_ssse3.c.o
@@ -438,7 +397,6 @@ arch/x86/chunkset_ssse3.o: arch/x86/chunkset_ssse3.c.o
 # target to build an object file
 arch/x86/chunkset_ssse3.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_ssse3.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_ssse3.c.o
 .PHONY : arch/x86/chunkset_ssse3.c.o
 
 arch/x86/chunkset_ssse3.i: arch/x86/chunkset_ssse3.c.i
@@ -447,7 +405,6 @@ arch/x86/chunkset_ssse3.i: arch/x86/chunkset_ssse3.c.i
 # target to preprocess a source file
 arch/x86/chunkset_ssse3.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_ssse3.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_ssse3.c.i
 .PHONY : arch/x86/chunkset_ssse3.c.i
 
 arch/x86/chunkset_ssse3.s: arch/x86/chunkset_ssse3.c.s
@@ -456,7 +413,6 @@ arch/x86/chunkset_ssse3.s: arch/x86/chunkset_ssse3.c.s
 # target to generate assembly for a file
 arch/x86/chunkset_ssse3.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/chunkset_ssse3.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/chunkset_ssse3.c.s
 .PHONY : arch/x86/chunkset_ssse3.c.s
 
 arch/x86/compare256_avx2.o: arch/x86/compare256_avx2.c.o
@@ -465,7 +421,6 @@ arch/x86/compare256_avx2.o: arch/x86/compare256_avx2.c.o
 # target to build an object file
 arch/x86/compare256_avx2.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/compare256_avx2.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/compare256_avx2.c.o
 .PHONY : arch/x86/compare256_avx2.c.o
 
 arch/x86/compare256_avx2.i: arch/x86/compare256_avx2.c.i
@@ -474,7 +429,6 @@ arch/x86/compare256_avx2.i: arch/x86/compare256_avx2.c.i
 # target to preprocess a source file
 arch/x86/compare256_avx2.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/compare256_avx2.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/compare256_avx2.c.i
 .PHONY : arch/x86/compare256_avx2.c.i
 
 arch/x86/compare256_avx2.s: arch/x86/compare256_avx2.c.s
@@ -483,7 +437,6 @@ arch/x86/compare256_avx2.s: arch/x86/compare256_avx2.c.s
 # target to generate assembly for a file
 arch/x86/compare256_avx2.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/compare256_avx2.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/compare256_avx2.c.s
 .PHONY : arch/x86/compare256_avx2.c.s
 
 arch/x86/compare256_sse2.o: arch/x86/compare256_sse2.c.o
@@ -492,7 +445,6 @@ arch/x86/compare256_sse2.o: arch/x86/compare256_sse2.c.o
 # target to build an object file
 arch/x86/compare256_sse2.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/compare256_sse2.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/compare256_sse2.c.o
 .PHONY : arch/x86/compare256_sse2.c.o
 
 arch/x86/compare256_sse2.i: arch/x86/compare256_sse2.c.i
@@ -501,7 +453,6 @@ arch/x86/compare256_sse2.i: arch/x86/compare256_sse2.c.i
 # target to preprocess a source file
 arch/x86/compare256_sse2.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/compare256_sse2.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/compare256_sse2.c.i
 .PHONY : arch/x86/compare256_sse2.c.i
 
 arch/x86/compare256_sse2.s: arch/x86/compare256_sse2.c.s
@@ -510,7 +461,6 @@ arch/x86/compare256_sse2.s: arch/x86/compare256_sse2.c.s
 # target to generate assembly for a file
 arch/x86/compare256_sse2.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/compare256_sse2.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/compare256_sse2.c.s
 .PHONY : arch/x86/compare256_sse2.c.s
 
 arch/x86/crc32_pclmulqdq.o: arch/x86/crc32_pclmulqdq.c.o
@@ -519,7 +469,6 @@ arch/x86/crc32_pclmulqdq.o: arch/x86/crc32_pclmulqdq.c.o
 # target to build an object file
 arch/x86/crc32_pclmulqdq.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc32_pclmulqdq.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/crc32_pclmulqdq.c.o
 .PHONY : arch/x86/crc32_pclmulqdq.c.o
 
 arch/x86/crc32_pclmulqdq.i: arch/x86/crc32_pclmulqdq.c.i
@@ -528,7 +477,6 @@ arch/x86/crc32_pclmulqdq.i: arch/x86/crc32_pclmulqdq.c.i
 # target to preprocess a source file
 arch/x86/crc32_pclmulqdq.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc32_pclmulqdq.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/crc32_pclmulqdq.c.i
 .PHONY : arch/x86/crc32_pclmulqdq.c.i
 
 arch/x86/crc32_pclmulqdq.s: arch/x86/crc32_pclmulqdq.c.s
@@ -537,7 +485,6 @@ arch/x86/crc32_pclmulqdq.s: arch/x86/crc32_pclmulqdq.c.s
 # target to generate assembly for a file
 arch/x86/crc32_pclmulqdq.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc32_pclmulqdq.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/crc32_pclmulqdq.c.s
 .PHONY : arch/x86/crc32_pclmulqdq.c.s
 
 arch/x86/crc32_vpclmulqdq.o: arch/x86/crc32_vpclmulqdq.c.o
@@ -546,7 +493,6 @@ arch/x86/crc32_vpclmulqdq.o: arch/x86/crc32_vpclmulqdq.c.o
 # target to build an object file
 arch/x86/crc32_vpclmulqdq.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc32_vpclmulqdq.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/crc32_vpclmulqdq.c.o
 .PHONY : arch/x86/crc32_vpclmulqdq.c.o
 
 arch/x86/crc32_vpclmulqdq.i: arch/x86/crc32_vpclmulqdq.c.i
@@ -555,7 +501,6 @@ arch/x86/crc32_vpclmulqdq.i: arch/x86/crc32_vpclmulqdq.c.i
 # target to preprocess a source file
 arch/x86/crc32_vpclmulqdq.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc32_vpclmulqdq.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/crc32_vpclmulqdq.c.i
 .PHONY : arch/x86/crc32_vpclmulqdq.c.i
 
 arch/x86/crc32_vpclmulqdq.s: arch/x86/crc32_vpclmulqdq.c.s
@@ -564,7 +509,6 @@ arch/x86/crc32_vpclmulqdq.s: arch/x86/crc32_vpclmulqdq.c.s
 # target to generate assembly for a file
 arch/x86/crc32_vpclmulqdq.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/crc32_vpclmulqdq.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/crc32_vpclmulqdq.c.s
 .PHONY : arch/x86/crc32_vpclmulqdq.c.s
 
 arch/x86/insert_string_sse42.o: arch/x86/insert_string_sse42.c.o
@@ -573,7 +517,6 @@ arch/x86/insert_string_sse42.o: arch/x86/insert_string_sse42.c.o
 # target to build an object file
 arch/x86/insert_string_sse42.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/insert_string_sse42.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/insert_string_sse42.c.o
 .PHONY : arch/x86/insert_string_sse42.c.o
 
 arch/x86/insert_string_sse42.i: arch/x86/insert_string_sse42.c.i
@@ -582,7 +525,6 @@ arch/x86/insert_string_sse42.i: arch/x86/insert_string_sse42.c.i
 # target to preprocess a source file
 arch/x86/insert_string_sse42.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/insert_string_sse42.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/insert_string_sse42.c.i
 .PHONY : arch/x86/insert_string_sse42.c.i
 
 arch/x86/insert_string_sse42.s: arch/x86/insert_string_sse42.c.s
@@ -591,7 +533,6 @@ arch/x86/insert_string_sse42.s: arch/x86/insert_string_sse42.c.s
 # target to generate assembly for a file
 arch/x86/insert_string_sse42.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/insert_string_sse42.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/insert_string_sse42.c.s
 .PHONY : arch/x86/insert_string_sse42.c.s
 
 arch/x86/slide_hash_avx2.o: arch/x86/slide_hash_avx2.c.o
@@ -600,7 +541,6 @@ arch/x86/slide_hash_avx2.o: arch/x86/slide_hash_avx2.c.o
 # target to build an object file
 arch/x86/slide_hash_avx2.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_hash_avx2.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/slide_hash_avx2.c.o
 .PHONY : arch/x86/slide_hash_avx2.c.o
 
 arch/x86/slide_hash_avx2.i: arch/x86/slide_hash_avx2.c.i
@@ -609,7 +549,6 @@ arch/x86/slide_hash_avx2.i: arch/x86/slide_hash_avx2.c.i
 # target to preprocess a source file
 arch/x86/slide_hash_avx2.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_hash_avx2.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/slide_hash_avx2.c.i
 .PHONY : arch/x86/slide_hash_avx2.c.i
 
 arch/x86/slide_hash_avx2.s: arch/x86/slide_hash_avx2.c.s
@@ -618,7 +557,6 @@ arch/x86/slide_hash_avx2.s: arch/x86/slide_hash_avx2.c.s
 # target to generate assembly for a file
 arch/x86/slide_hash_avx2.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_hash_avx2.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/slide_hash_avx2.c.s
 .PHONY : arch/x86/slide_hash_avx2.c.s
 
 arch/x86/slide_hash_sse2.o: arch/x86/slide_hash_sse2.c.o
@@ -627,7 +565,6 @@ arch/x86/slide_hash_sse2.o: arch/x86/slide_hash_sse2.c.o
 # target to build an object file
 arch/x86/slide_hash_sse2.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_hash_sse2.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/slide_hash_sse2.c.o
 .PHONY : arch/x86/slide_hash_sse2.c.o
 
 arch/x86/slide_hash_sse2.i: arch/x86/slide_hash_sse2.c.i
@@ -636,7 +573,6 @@ arch/x86/slide_hash_sse2.i: arch/x86/slide_hash_sse2.c.i
 # target to preprocess a source file
 arch/x86/slide_hash_sse2.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_hash_sse2.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/slide_hash_sse2.c.i
 .PHONY : arch/x86/slide_hash_sse2.c.i
 
 arch/x86/slide_hash_sse2.s: arch/x86/slide_hash_sse2.c.s
@@ -645,7 +581,6 @@ arch/x86/slide_hash_sse2.s: arch/x86/slide_hash_sse2.c.s
 # target to generate assembly for a file
 arch/x86/slide_hash_sse2.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_hash_sse2.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/slide_hash_sse2.c.s
 .PHONY : arch/x86/slide_hash_sse2.c.s
 
 arch/x86/x86_features.o: arch/x86/x86_features.c.o
@@ -654,7 +589,6 @@ arch/x86/x86_features.o: arch/x86/x86_features.c.o
 # target to build an object file
 arch/x86/x86_features.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/x86_features.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/x86_features.c.o
 .PHONY : arch/x86/x86_features.c.o
 
 arch/x86/x86_features.i: arch/x86/x86_features.c.i
@@ -663,7 +597,6 @@ arch/x86/x86_features.i: arch/x86/x86_features.c.i
 # target to preprocess a source file
 arch/x86/x86_features.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/x86_features.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/x86_features.c.i
 .PHONY : arch/x86/x86_features.c.i
 
 arch/x86/x86_features.s: arch/x86/x86_features.c.s
@@ -672,7 +605,6 @@ arch/x86/x86_features.s: arch/x86/x86_features.c.s
 # target to generate assembly for a file
 arch/x86/x86_features.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/x86_features.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/arch/x86/x86_features.c.s
 .PHONY : arch/x86/x86_features.c.s
 
 chunkset.o: chunkset.c.o
@@ -681,7 +613,6 @@ chunkset.o: chunkset.c.o
 # target to build an object file
 chunkset.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/chunkset.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/chunkset.c.o
 .PHONY : chunkset.c.o
 
 chunkset.i: chunkset.c.i
@@ -690,7 +621,6 @@ chunkset.i: chunkset.c.i
 # target to preprocess a source file
 chunkset.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/chunkset.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/chunkset.c.i
 .PHONY : chunkset.c.i
 
 chunkset.s: chunkset.c.s
@@ -699,7 +629,6 @@ chunkset.s: chunkset.c.s
 # target to generate assembly for a file
 chunkset.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/chunkset.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/chunkset.c.s
 .PHONY : chunkset.c.s
 
 compare256.o: compare256.c.o
@@ -708,7 +637,6 @@ compare256.o: compare256.c.o
 # target to build an object file
 compare256.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/compare256.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/compare256.c.o
 .PHONY : compare256.c.o
 
 compare256.i: compare256.c.i
@@ -717,7 +645,6 @@ compare256.i: compare256.c.i
 # target to preprocess a source file
 compare256.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/compare256.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/compare256.c.i
 .PHONY : compare256.c.i
 
 compare256.s: compare256.c.s
@@ -726,7 +653,6 @@ compare256.s: compare256.c.s
 # target to generate assembly for a file
 compare256.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/compare256.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/compare256.c.s
 .PHONY : compare256.c.s
 
 compress.o: compress.c.o
@@ -735,7 +661,6 @@ compress.o: compress.c.o
 # target to build an object file
 compress.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/compress.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/compress.c.o
 .PHONY : compress.c.o
 
 compress.i: compress.c.i
@@ -744,7 +669,6 @@ compress.i: compress.c.i
 # target to preprocess a source file
 compress.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/compress.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/compress.c.i
 .PHONY : compress.c.i
 
 compress.s: compress.c.s
@@ -753,7 +677,6 @@ compress.s: compress.c.s
 # target to generate assembly for a file
 compress.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/compress.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/compress.c.s
 .PHONY : compress.c.s
 
 cpu_features.o: cpu_features.c.o
@@ -762,7 +685,6 @@ cpu_features.o: cpu_features.c.o
 # target to build an object file
 cpu_features.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/cpu_features.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/cpu_features.c.o
 .PHONY : cpu_features.c.o
 
 cpu_features.i: cpu_features.c.i
@@ -771,7 +693,6 @@ cpu_features.i: cpu_features.c.i
 # target to preprocess a source file
 cpu_features.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/cpu_features.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/cpu_features.c.i
 .PHONY : cpu_features.c.i
 
 cpu_features.s: cpu_features.c.s
@@ -780,7 +701,6 @@ cpu_features.s: cpu_features.c.s
 # target to generate assembly for a file
 cpu_features.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/cpu_features.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/cpu_features.c.s
 .PHONY : cpu_features.c.s
 
 crc32_braid.o: crc32_braid.c.o
@@ -789,7 +709,6 @@ crc32_braid.o: crc32_braid.c.o
 # target to build an object file
 crc32_braid.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_braid.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_braid.c.o
 .PHONY : crc32_braid.c.o
 
 crc32_braid.i: crc32_braid.c.i
@@ -798,7 +717,6 @@ crc32_braid.i: crc32_braid.c.i
 # target to preprocess a source file
 crc32_braid.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_braid.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_braid.c.i
 .PHONY : crc32_braid.c.i
 
 crc32_braid.s: crc32_braid.c.s
@@ -807,7 +725,6 @@ crc32_braid.s: crc32_braid.c.s
 # target to generate assembly for a file
 crc32_braid.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_braid.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_braid.c.s
 .PHONY : crc32_braid.c.s
 
 crc32_braid_comb.o: crc32_braid_comb.c.o
@@ -816,7 +733,6 @@ crc32_braid_comb.o: crc32_braid_comb.c.o
 # target to build an object file
 crc32_braid_comb.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_braid_comb.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_braid_comb.c.o
 .PHONY : crc32_braid_comb.c.o
 
 crc32_braid_comb.i: crc32_braid_comb.c.i
@@ -825,7 +741,6 @@ crc32_braid_comb.i: crc32_braid_comb.c.i
 # target to preprocess a source file
 crc32_braid_comb.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_braid_comb.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_braid_comb.c.i
 .PHONY : crc32_braid_comb.c.i
 
 crc32_braid_comb.s: crc32_braid_comb.c.s
@@ -834,7 +749,6 @@ crc32_braid_comb.s: crc32_braid_comb.c.s
 # target to generate assembly for a file
 crc32_braid_comb.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_braid_comb.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_braid_comb.c.s
 .PHONY : crc32_braid_comb.c.s
 
 crc32_fold.o: crc32_fold.c.o
@@ -843,7 +757,6 @@ crc32_fold.o: crc32_fold.c.o
 # target to build an object file
 crc32_fold.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_fold.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_fold.c.o
 .PHONY : crc32_fold.c.o
 
 crc32_fold.i: crc32_fold.c.i
@@ -852,7 +765,6 @@ crc32_fold.i: crc32_fold.c.i
 # target to preprocess a source file
 crc32_fold.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_fold.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_fold.c.i
 .PHONY : crc32_fold.c.i
 
 crc32_fold.s: crc32_fold.c.s
@@ -861,7 +773,6 @@ crc32_fold.s: crc32_fold.c.s
 # target to generate assembly for a file
 crc32_fold.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/crc32_fold.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/crc32_fold.c.s
 .PHONY : crc32_fold.c.s
 
 deflate.o: deflate.c.o
@@ -870,7 +781,6 @@ deflate.o: deflate.c.o
 # target to build an object file
 deflate.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate.c.o
 .PHONY : deflate.c.o
 
 deflate.i: deflate.c.i
@@ -879,7 +789,6 @@ deflate.i: deflate.c.i
 # target to preprocess a source file
 deflate.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate.c.i
 .PHONY : deflate.c.i
 
 deflate.s: deflate.c.s
@@ -888,7 +797,6 @@ deflate.s: deflate.c.s
 # target to generate assembly for a file
 deflate.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate.c.s
 .PHONY : deflate.c.s
 
 deflate_fast.o: deflate_fast.c.o
@@ -897,7 +805,6 @@ deflate_fast.o: deflate_fast.c.o
 # target to build an object file
 deflate_fast.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_fast.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_fast.c.o
 .PHONY : deflate_fast.c.o
 
 deflate_fast.i: deflate_fast.c.i
@@ -906,7 +813,6 @@ deflate_fast.i: deflate_fast.c.i
 # target to preprocess a source file
 deflate_fast.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_fast.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_fast.c.i
 .PHONY : deflate_fast.c.i
 
 deflate_fast.s: deflate_fast.c.s
@@ -915,7 +821,6 @@ deflate_fast.s: deflate_fast.c.s
 # target to generate assembly for a file
 deflate_fast.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_fast.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_fast.c.s
 .PHONY : deflate_fast.c.s
 
 deflate_huff.o: deflate_huff.c.o
@@ -924,7 +829,6 @@ deflate_huff.o: deflate_huff.c.o
 # target to build an object file
 deflate_huff.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_huff.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_huff.c.o
 .PHONY : deflate_huff.c.o
 
 deflate_huff.i: deflate_huff.c.i
@@ -933,7 +837,6 @@ deflate_huff.i: deflate_huff.c.i
 # target to preprocess a source file
 deflate_huff.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_huff.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_huff.c.i
 .PHONY : deflate_huff.c.i
 
 deflate_huff.s: deflate_huff.c.s
@@ -942,7 +845,6 @@ deflate_huff.s: deflate_huff.c.s
 # target to generate assembly for a file
 deflate_huff.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_huff.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_huff.c.s
 .PHONY : deflate_huff.c.s
 
 deflate_medium.o: deflate_medium.c.o
@@ -951,7 +853,6 @@ deflate_medium.o: deflate_medium.c.o
 # target to build an object file
 deflate_medium.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_medium.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_medium.c.o
 .PHONY : deflate_medium.c.o
 
 deflate_medium.i: deflate_medium.c.i
@@ -960,7 +861,6 @@ deflate_medium.i: deflate_medium.c.i
 # target to preprocess a source file
 deflate_medium.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_medium.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_medium.c.i
 .PHONY : deflate_medium.c.i
 
 deflate_medium.s: deflate_medium.c.s
@@ -969,7 +869,6 @@ deflate_medium.s: deflate_medium.c.s
 # target to generate assembly for a file
 deflate_medium.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_medium.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_medium.c.s
 .PHONY : deflate_medium.c.s
 
 deflate_quick.o: deflate_quick.c.o
@@ -978,7 +877,6 @@ deflate_quick.o: deflate_quick.c.o
 # target to build an object file
 deflate_quick.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_quick.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_quick.c.o
 .PHONY : deflate_quick.c.o
 
 deflate_quick.i: deflate_quick.c.i
@@ -987,7 +885,6 @@ deflate_quick.i: deflate_quick.c.i
 # target to preprocess a source file
 deflate_quick.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_quick.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_quick.c.i
 .PHONY : deflate_quick.c.i
 
 deflate_quick.s: deflate_quick.c.s
@@ -996,7 +893,6 @@ deflate_quick.s: deflate_quick.c.s
 # target to generate assembly for a file
 deflate_quick.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_quick.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_quick.c.s
 .PHONY : deflate_quick.c.s
 
 deflate_rle.o: deflate_rle.c.o
@@ -1005,7 +901,6 @@ deflate_rle.o: deflate_rle.c.o
 # target to build an object file
 deflate_rle.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_rle.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_rle.c.o
 .PHONY : deflate_rle.c.o
 
 deflate_rle.i: deflate_rle.c.i
@@ -1014,7 +909,6 @@ deflate_rle.i: deflate_rle.c.i
 # target to preprocess a source file
 deflate_rle.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_rle.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_rle.c.i
 .PHONY : deflate_rle.c.i
 
 deflate_rle.s: deflate_rle.c.s
@@ -1023,7 +917,6 @@ deflate_rle.s: deflate_rle.c.s
 # target to generate assembly for a file
 deflate_rle.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_rle.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_rle.c.s
 .PHONY : deflate_rle.c.s
 
 deflate_slow.o: deflate_slow.c.o
@@ -1032,7 +925,6 @@ deflate_slow.o: deflate_slow.c.o
 # target to build an object file
 deflate_slow.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_slow.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_slow.c.o
 .PHONY : deflate_slow.c.o
 
 deflate_slow.i: deflate_slow.c.i
@@ -1041,7 +933,6 @@ deflate_slow.i: deflate_slow.c.i
 # target to preprocess a source file
 deflate_slow.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_slow.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_slow.c.i
 .PHONY : deflate_slow.c.i
 
 deflate_slow.s: deflate_slow.c.s
@@ -1050,7 +941,6 @@ deflate_slow.s: deflate_slow.c.s
 # target to generate assembly for a file
 deflate_slow.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_slow.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_slow.c.s
 .PHONY : deflate_slow.c.s
 
 deflate_stored.o: deflate_stored.c.o
@@ -1059,7 +949,6 @@ deflate_stored.o: deflate_stored.c.o
 # target to build an object file
 deflate_stored.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_stored.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_stored.c.o
 .PHONY : deflate_stored.c.o
 
 deflate_stored.i: deflate_stored.c.i
@@ -1068,7 +957,6 @@ deflate_stored.i: deflate_stored.c.i
 # target to preprocess a source file
 deflate_stored.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_stored.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_stored.c.i
 .PHONY : deflate_stored.c.i
 
 deflate_stored.s: deflate_stored.c.s
@@ -1077,7 +965,6 @@ deflate_stored.s: deflate_stored.c.s
 # target to generate assembly for a file
 deflate_stored.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/deflate_stored.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/deflate_stored.c.s
 .PHONY : deflate_stored.c.s
 
 functable.o: functable.c.o
@@ -1086,7 +973,6 @@ functable.o: functable.c.o
 # target to build an object file
 functable.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/functable.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/functable.c.o
 .PHONY : functable.c.o
 
 functable.i: functable.c.i
@@ -1095,7 +981,6 @@ functable.i: functable.c.i
 # target to preprocess a source file
 functable.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/functable.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/functable.c.i
 .PHONY : functable.c.i
 
 functable.s: functable.c.s
@@ -1104,7 +989,6 @@ functable.s: functable.c.s
 # target to generate assembly for a file
 functable.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/functable.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/functable.c.s
 .PHONY : functable.c.s
 
 gzlib.o: gzlib.c.o
@@ -1113,7 +997,6 @@ gzlib.o: gzlib.c.o
 # target to build an object file
 gzlib.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzlib.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.c.o
 .PHONY : gzlib.c.o
 
 gzlib.i: gzlib.c.i
@@ -1122,7 +1005,6 @@ gzlib.i: gzlib.c.i
 # target to preprocess a source file
 gzlib.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzlib.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.c.i
 .PHONY : gzlib.c.i
 
 gzlib.s: gzlib.c.s
@@ -1131,7 +1013,6 @@ gzlib.s: gzlib.c.s
 # target to generate assembly for a file
 gzlib.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzlib.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzlib.c.s
 .PHONY : gzlib.c.s
 
 gzread.o: gzread.c.o
@@ -1140,7 +1021,6 @@ gzread.o: gzread.c.o
 # target to build an object file
 gzread.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzread.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzread.c.o
 .PHONY : gzread.c.o
 
 gzread.i: gzread.c.i
@@ -1149,7 +1029,6 @@ gzread.i: gzread.c.i
 # target to preprocess a source file
 gzread.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzread.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzread.c.i
 .PHONY : gzread.c.i
 
 gzread.s: gzread.c.s
@@ -1158,7 +1037,6 @@ gzread.s: gzread.c.s
 # target to generate assembly for a file
 gzread.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzread.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzread.c.s
 .PHONY : gzread.c.s
 
 gzwrite.o: gzwrite.c.o
@@ -1167,7 +1045,6 @@ gzwrite.o: gzwrite.c.o
 # target to build an object file
 gzwrite.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzwrite.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.c.o
 .PHONY : gzwrite.c.o
 
 gzwrite.i: gzwrite.c.i
@@ -1176,7 +1053,6 @@ gzwrite.i: gzwrite.c.i
 # target to preprocess a source file
 gzwrite.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzwrite.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.c.i
 .PHONY : gzwrite.c.i
 
 gzwrite.s: gzwrite.c.s
@@ -1185,7 +1061,6 @@ gzwrite.s: gzwrite.c.s
 # target to generate assembly for a file
 gzwrite.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/gzwrite.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/gzwrite.c.s
 .PHONY : gzwrite.c.s
 
 infback.o: infback.c.o
@@ -1194,7 +1069,6 @@ infback.o: infback.c.o
 # target to build an object file
 infback.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/infback.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/infback.c.o
 .PHONY : infback.c.o
 
 infback.i: infback.c.i
@@ -1203,7 +1077,6 @@ infback.i: infback.c.i
 # target to preprocess a source file
 infback.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/infback.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/infback.c.i
 .PHONY : infback.c.i
 
 infback.s: infback.c.s
@@ -1212,7 +1085,6 @@ infback.s: infback.c.s
 # target to generate assembly for a file
 infback.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/infback.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/infback.c.s
 .PHONY : infback.c.s
 
 inflate.o: inflate.c.o
@@ -1221,7 +1093,6 @@ inflate.o: inflate.c.o
 # target to build an object file
 inflate.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/inflate.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/inflate.c.o
 .PHONY : inflate.c.o
 
 inflate.i: inflate.c.i
@@ -1230,7 +1101,6 @@ inflate.i: inflate.c.i
 # target to preprocess a source file
 inflate.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/inflate.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/inflate.c.i
 .PHONY : inflate.c.i
 
 inflate.s: inflate.c.s
@@ -1239,7 +1109,6 @@ inflate.s: inflate.c.s
 # target to generate assembly for a file
 inflate.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/inflate.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/inflate.c.s
 .PHONY : inflate.c.s
 
 inftrees.o: inftrees.c.o
@@ -1248,7 +1117,6 @@ inftrees.o: inftrees.c.o
 # target to build an object file
 inftrees.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/inftrees.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.c.o
 .PHONY : inftrees.c.o
 
 inftrees.i: inftrees.c.i
@@ -1257,7 +1125,6 @@ inftrees.i: inftrees.c.i
 # target to preprocess a source file
 inftrees.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/inftrees.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.c.i
 .PHONY : inftrees.c.i
 
 inftrees.s: inftrees.c.s
@@ -1266,7 +1133,6 @@ inftrees.s: inftrees.c.s
 # target to generate assembly for a file
 inftrees.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/inftrees.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/inftrees.c.s
 .PHONY : inftrees.c.s
 
 insert_string.o: insert_string.c.o
@@ -1275,7 +1141,6 @@ insert_string.o: insert_string.c.o
 # target to build an object file
 insert_string.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/insert_string.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/insert_string.c.o
 .PHONY : insert_string.c.o
 
 insert_string.i: insert_string.c.i
@@ -1284,7 +1149,6 @@ insert_string.i: insert_string.c.i
 # target to preprocess a source file
 insert_string.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/insert_string.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/insert_string.c.i
 .PHONY : insert_string.c.i
 
 insert_string.s: insert_string.c.s
@@ -1293,7 +1157,6 @@ insert_string.s: insert_string.c.s
 # target to generate assembly for a file
 insert_string.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/insert_string.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/insert_string.c.s
 .PHONY : insert_string.c.s
 
 insert_string_roll.o: insert_string_roll.c.o
@@ -1302,7 +1165,6 @@ insert_string_roll.o: insert_string_roll.c.o
 # target to build an object file
 insert_string_roll.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/insert_string_roll.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/insert_string_roll.c.o
 .PHONY : insert_string_roll.c.o
 
 insert_string_roll.i: insert_string_roll.c.i
@@ -1311,7 +1173,6 @@ insert_string_roll.i: insert_string_roll.c.i
 # target to preprocess a source file
 insert_string_roll.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/insert_string_roll.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/insert_string_roll.c.i
 .PHONY : insert_string_roll.c.i
 
 insert_string_roll.s: insert_string_roll.c.s
@@ -1320,7 +1181,6 @@ insert_string_roll.s: insert_string_roll.c.s
 # target to generate assembly for a file
 insert_string_roll.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/insert_string_roll.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/insert_string_roll.c.s
 .PHONY : insert_string_roll.c.s
 
 slide_hash.o: slide_hash.c.o
@@ -1329,7 +1189,6 @@ slide_hash.o: slide_hash.c.o
 # target to build an object file
 slide_hash.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/slide_hash.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/slide_hash.c.o
 .PHONY : slide_hash.c.o
 
 slide_hash.i: slide_hash.c.i
@@ -1338,7 +1197,6 @@ slide_hash.i: slide_hash.c.i
 # target to preprocess a source file
 slide_hash.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/slide_hash.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/slide_hash.c.i
 .PHONY : slide_hash.c.i
 
 slide_hash.s: slide_hash.c.s
@@ -1347,7 +1205,6 @@ slide_hash.s: slide_hash.c.s
 # target to generate assembly for a file
 slide_hash.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/slide_hash.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/slide_hash.c.s
 .PHONY : slide_hash.c.s
 
 trees.o: trees.c.o
@@ -1356,7 +1213,6 @@ trees.o: trees.c.o
 # target to build an object file
 trees.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/trees.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/trees.c.o
 .PHONY : trees.c.o
 
 trees.i: trees.c.i
@@ -1365,7 +1221,6 @@ trees.i: trees.c.i
 # target to preprocess a source file
 trees.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/trees.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/trees.c.i
 .PHONY : trees.c.i
 
 trees.s: trees.c.s
@@ -1374,7 +1229,6 @@ trees.s: trees.c.s
 # target to generate assembly for a file
 trees.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/trees.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/trees.c.s
 .PHONY : trees.c.s
 
 uncompr.o: uncompr.c.o
@@ -1383,7 +1237,6 @@ uncompr.o: uncompr.c.o
 # target to build an object file
 uncompr.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/uncompr.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.c.o
 .PHONY : uncompr.c.o
 
 uncompr.i: uncompr.c.i
@@ -1392,7 +1245,6 @@ uncompr.i: uncompr.c.i
 # target to preprocess a source file
 uncompr.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/uncompr.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.c.i
 .PHONY : uncompr.c.i
 
 uncompr.s: uncompr.c.s
@@ -1401,7 +1253,6 @@ uncompr.s: uncompr.c.s
 # target to generate assembly for a file
 uncompr.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/uncompr.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/uncompr.c.s
 .PHONY : uncompr.c.s
 
 zutil.o: zutil.c.o
@@ -1410,7 +1261,6 @@ zutil.o: zutil.c.o
 # target to build an object file
 zutil.c.o:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/zutil.c.o
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/zutil.c.o
 .PHONY : zutil.c.o
 
 zutil.i: zutil.c.i
@@ -1419,7 +1269,6 @@ zutil.i: zutil.c.i
 # target to preprocess a source file
 zutil.c.i:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/zutil.c.i
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/zutil.c.i
 .PHONY : zutil.c.i
 
 zutil.s: zutil.c.s
@@ -1428,7 +1277,6 @@ zutil.s: zutil.c.s
 # target to generate assembly for a file
 zutil.c.s:
 	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/zutil.c.s
-	cd /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build && $(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlibstatic.dir/build.make _deps/zlib-build/CMakeFiles/zlibstatic.dir/zutil.c.s
 .PHONY : zutil.c.s
 
 # Help Target
@@ -1444,7 +1292,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... zlib"
-	@echo "... zlibstatic"
 	@echo "... adler32.o"
 	@echo "... adler32.i"
 	@echo "... adler32.s"
