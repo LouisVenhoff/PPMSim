@@ -1,4 +1,4 @@
-# Install script for directory: /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-src
+# Install script for directory: /home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/zlib-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -37,7 +37,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
+# Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
@@ -55,8 +55,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/libz.so.1.2.13.zlib-ng"
-    "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/libz.so.1"
+    "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/zlib-build/libz.so.1.2.13.zlib-ng"
+    "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/zlib-build/libz.so.1"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libz.so.1.2.13.zlib-ng"
@@ -72,28 +72,22 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/libz.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/zlib-build/libz.so")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE RENAME "zlib.h" FILES "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/zlib.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE RENAME "zlib.h" FILES "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/zlib-build/zlib.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE RENAME "zlib_name_mangling.h" FILES "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/zlib_name_mangling.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE RENAME "zlib_name_mangling.h" FILES "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/zlib-build/zlib_name_mangling.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE RENAME "zconf.h" FILES "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/zconf.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE RENAME "zconf.h" FILES "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/zlib-build/zconf.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/zlib.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/zlib-build/zlib.pc")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/zlib-build/install_local_manifest.txt"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
-endif()

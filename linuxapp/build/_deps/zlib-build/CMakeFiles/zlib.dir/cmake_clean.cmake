@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   ".1"
-  "CMakeFiles/zlib.dir/link.d"
   "CMakeFiles/zlib.dir/adler32.c.o"
   "CMakeFiles/zlib.dir/adler32.c.o.d"
   "CMakeFiles/zlib.dir/adler32_fold.c.o"

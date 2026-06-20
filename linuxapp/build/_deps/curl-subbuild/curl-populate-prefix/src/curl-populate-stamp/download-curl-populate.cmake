@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file LICENSE.rst or https://cmake.org/licensing for details.
+# file Copyright.txt or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
+cmake_minimum_required(VERSION 3.5)
 
 function(check_file_hash has_hash hash_is_good)
   if("${has_hash}" STREQUAL "")
@@ -21,15 +21,15 @@ function(check_file_hash has_hash hash_is_good)
 
   set("${has_hash}" TRUE PARENT_SCOPE)
 
-  message(VERBOSE "verifying file...
-       file='/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'")
+  message(STATUS "verifying file...
+       file='/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'")
 
-  file("SHA256" "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz" actual_value)
+  file("SHA256" "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "73a4b0e99596a09fa5924a4fb7e4b995a85fda0d18a2c02ab9cf134bebce04ee")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
-    message(VERBOSE "SHA256 hash of
-    /home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz
+    message(STATUS "SHA256 hash of
+    /home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz
   does not match expected value
     expected: '73a4b0e99596a09fa5924a4fb7e4b995a85fda0d18a2c02ab9cf134bebce04ee'
       actual: '${actual_value}'")
@@ -44,7 +44,7 @@ function(sleep_before_download attempt)
   endif()
 
   if(attempt EQUAL 1)
-    message(VERBOSE "Retrying...")
+    message(STATUS "Retrying...")
     return()
   endif()
 
@@ -66,52 +66,59 @@ function(sleep_before_download attempt)
     set(sleep_seconds 1200)
   endif()
 
-  message(VERBOSE "Retry after ${sleep_seconds} seconds (attempt #${attempt}) ...")
+  message(STATUS "Retry after ${sleep_seconds} seconds (attempt #${attempt}) ...")
 
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
+if("/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz" STREQUAL "")
+  message(FATAL_ERROR "LOCAL can't be empty")
+endif()
+
+if("https://github.com/curl/curl/releases/download/curl-8_10_1/curl-8.10.1.tar.xz" STREQUAL "")
+  message(FATAL_ERROR "REMOTE can't be empty")
+endif()
+
+if(EXISTS "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
-      message(VERBOSE "File already exists and hash match (skip download):
-  file='/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
+      message(STATUS "File already exists and hash match (skip download):
+  file='/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
   SHA256='73a4b0e99596a09fa5924a4fb7e4b995a85fda0d18a2c02ab9cf134bebce04ee'"
       )
       return()
     else()
-      message(VERBOSE "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
+      message(STATUS "File already exists but hash mismatch. Removing...")
+      file(REMOVE "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
     endif()
   else()
-    message(VERBOSE "File already exists but no hash specified (use URL_HASH):
-  file='/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
+    message(STATUS "File already exists but no hash specified (use URL_HASH):
+  file='/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
+    file(REMOVE "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
   endif()
 endif()
 
 set(retry_number 5)
 
-message(VERBOSE "Downloading...
-   dst='/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
+message(STATUS "Downloading...
+   dst='/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz'
    timeout='none'
    inactivity timeout='none'"
 )
-set(download_retry_codes 7 6 8 15 28 35)
+set(download_retry_codes 7 6 8 15 28)
 set(skip_url_list)
 set(status_code)
 foreach(i RANGE ${retry_number})
   if(status_code IN_LIST download_retry_codes)
     sleep_before_download(${i})
   endif()
-  foreach(url IN ITEMS [====[https://github.com/curl/curl/releases/download/curl-8_10_1/curl-8.10.1.tar.xz]====])
+  foreach(url https://github.com/curl/curl/releases/download/curl-8_10_1/curl-8.10.1.tar.xz)
     if(NOT url IN_LIST skip_url_list)
-      message(VERBOSE "Using src='${url}'")
+      message(STATUS "Using src='${url}'")
 
-      
       
       
       
@@ -119,7 +126,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz"
+        "${url}" "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -135,10 +142,10 @@ foreach(i RANGE ${retry_number})
       if(status_code EQUAL 0)
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
-          message(VERBOSE "Hash mismatch, removing...")
-          file(REMOVE "/home/louis/Documents/Entwicklung/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
+          message(STATUS "Hash mismatch, removing...")
+          file(REMOVE "/home/louisvenhoff/Entwicklung/Louis/PPMSim/linuxapp/build/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.10.1.tar.xz")
         else()
-          message(VERBOSE "Downloading... done")
+          message(STATUS "Downloading... done")
           return()
         endif()
       else()

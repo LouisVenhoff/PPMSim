@@ -83,14 +83,14 @@ while test "$#" -gt 0; do
     ;;
 
   --feature|--features)
-    for feature in alt-svc AsynchDNS HSTS HTTP2 HTTPS-proxy IDN IPv6 Largefile libz NTLM PSL SSL threadsafe TLS-SRP UnixSockets ""; do
+    for feature in alt-svc AsynchDNS HSTS HTTPS-proxy IPv6 Largefile libz NTLM SSL threadsafe TLS-SRP UnixSockets ""; do
       test -n "$feature" && echo "$feature"
     done
     ;;
 
   --protocols)
     # shellcheck disable=SC2043
-    for protocol in HTTP HTTPS IPFS IPNS SCP SFTP; do
+    for protocol in HTTP HTTPS IPFS IPNS; do
       echo "$protocol"
     done
     ;;
@@ -161,7 +161,7 @@ while test "$#" -gt 0; do
       CURLLIBDIR=""
     fi
     if test "Xyes" = "Xno"; then
-      echo "${CURLLIBDIR}-lcurl -lgcc -lgcc_s -lc -lgcc -lgcc_s -lidn2 -lssl -lcrypto -lz -lnghttp2 -lpsl -lssh2"
+      echo "${CURLLIBDIR}-lcurl -lgcc -lgcc_s -lc -lgcc -lgcc_s -lssl -lcrypto -lz"
     else
       echo "${CURLLIBDIR}-lcurl"
     fi
@@ -173,7 +173,7 @@ while test "$#" -gt 0; do
 
   --static-libs)
     if test "Xno" != "Xno" ; then
-      echo "/usr/local/lib/libcurl.a"  -lgcc -lgcc_s -lc -lgcc -lgcc_s -lidn2 -lssl -lcrypto -lz -lnghttp2 -lpsl -lssh2
+      echo "/usr/local/lib/libcurl.a"  -lgcc -lgcc_s -lc -lgcc -lgcc_s -lssl -lcrypto -lz
     else
       echo 'curl was built with static libraries disabled' >&2
       exit 1

@@ -369,10 +369,10 @@
 #define HAVE_LIBGEN_H 1
 
 /* Define to 1 if you have the `idn2' library (-lidn2). */
-#define HAVE_LIBIDN2 1
+/* #undef HAVE_LIBIDN2 */
 
 /* Define to 1 if you have the idn2.h header file. */
-#define HAVE_IDN2_H 1
+/* #undef HAVE_IDN2_H */
 
 /* if zlib is available */
 #define HAVE_LIBZ 1
@@ -591,7 +591,7 @@
 #define HAVE_TERMIOS_H 1
 
 /* Define to 1 if you have the <termio.h> header file. */
-/* #undef HAVE_TERMIO_H */
+#define HAVE_TERMIO_H 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
@@ -711,13 +711,13 @@
 /* #undef USE_LIBSSH */
 
 /* if libssh2 is in use */
-#define USE_LIBSSH2 1
+/* #undef USE_LIBSSH2 */
 
 /* if wolfssh is in use */
 /* #undef USE_WOLFSSH */
 
 /* if libpsl is in use */
-#define USE_LIBPSL 1
+/* #undef USE_LIBPSL */
 
 /* if you want to use OpenLDAP code instead of legacy ldap implementation */
 /* #undef USE_OPENLDAP */
@@ -742,7 +742,7 @@
 /* #undef CURL_DISABLE_OPENSSL_AUTO_LOAD_CONFIG */
 
 /* to enable NGHTTP2  */
-#define USE_NGHTTP2 1
+/* #undef USE_NGHTTP2 */
 
 /* to enable NGTCP2 */
 /* #undef USE_NGTCP2 */
