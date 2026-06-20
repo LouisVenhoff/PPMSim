@@ -19,7 +19,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(cpr)
 FetchContent_MakeAvailable(nlohmann_json)
 
-add_executable(ppmSim ./src/main.cpp ./src/network.cpp ./src/udp.cpp)
+add_executable(ppmSim ./src/main.cpp ./src/network.cpp ./src/udp.cpp ./src/virtualDevice.cpp)
 
 target_link_libraries(ppmSim PRIVATE cpr::cpr)
 target_link_libraries(ppmSim PRIVATE nlohmann_json::nlohmann_json)

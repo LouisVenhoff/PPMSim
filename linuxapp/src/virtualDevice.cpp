@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <iostream>
+#include <linux/uinput.h>
 
 int fd;
 
@@ -48,4 +49,8 @@ void virtualDeviceInit(){
 
   //Create device
   ioctl(fd, UI_DEV_CREATE);
+}
+
+void virtualDeviceUpdate(char *controls){
+  std::cout << "Updating virtual device with controls: " << controls << std::endl;
 }
