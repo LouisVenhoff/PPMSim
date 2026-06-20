@@ -33,7 +33,7 @@ int main(){
     while(true){
         char responseBuffer[1024];
         int msgLength = receiveNextPacket(fd, responseBuffer);
-
+        //cout << "Received packet with length: " << responseBuffer << std::endl;
         virtualDeviceUpdate(responseBuffer);
     }
 
