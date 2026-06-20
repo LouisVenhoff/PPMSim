@@ -3,6 +3,7 @@
 #include <netinet/in.h>
 #include "network.h"
 #include "udp.h"
+#include "virtualDevice.h"
 
 using namespace std;
 
@@ -20,7 +21,8 @@ string promptDeviceIp(){
 int main(){
     
     setupRemoteConnection();
-    
+
+    virtualDeviceInit();
     int fd = startUdpListener();
   
     if(fd < 0){
@@ -32,7 +34,7 @@ int main(){
         char responseBuffer[1024];
         int msgLength = receiveNextPacket(fd, responseBuffer);
 
-        cout << responseBuffer<< std::endl;
+        virtualDeviceUpdate(responseBuffer);
     }
 
     
